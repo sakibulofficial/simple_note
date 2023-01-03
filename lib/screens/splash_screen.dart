@@ -25,11 +25,6 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     initialTile();
 
-    changePage();
-    super.initState();
-  }
-
-  changePage() {
     Future.delayed(const Duration(seconds: 2)).then(
       (value) => Navigator.pushReplacement(
         context,
@@ -39,52 +34,49 @@ class _SplashScreenState extends State<SplashScreen> {
                 )),
       ),
     );
+    super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: getBody(),
-    );
-  }
-
-  SafeArea getBody() {
-    return SafeArea(
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Expanded(
-              child: Center(
-                child: Text(
-                  "Simple note",
-                  style: GoogleFonts.poppins(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
+                child: Center(
+                  child: Text(
+                    "Simple note",
+                    style: GoogleFonts.poppins(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
-            ),
-            Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text(
-                    'Developed by',
-                    style: powerbyTextStyle,
-                  ),
-                  Container(
-                    padding: const EdgeInsets.only(bottom: 30),
-                    child: Text(
-                      'Md Sakibul Islam',
-                      style: bodyTextStyle,
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Developed by',
+                      style: powerbyTextStyle,
                     ),
-                  ),
-                ],
+                    Container(
+                      padding: const EdgeInsets.only(bottom: 30),
+                      child: Text(
+                        'Md Sakibul Islam',
+                        style: bodyTextStyle,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

@@ -1,16 +1,20 @@
 # simple_note
 
-A new Flutter project.
+Simple Notes App with flutter and sqflite
 
-## Getting Started
+## Apk file
 
-This project is a starting point for a Flutter application.
+- Follow [click for apik](https://github.com/sakibulofficial/simple_note/tree/main/apkfle/app-release.apk)
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<pre>
+<img src="https://github.com/sakibulofficial/simple_note/tree/main/screenshort/Screenshot_1665035443.png" alt="ss-notes-list" width="330" height="500" /> 
+<img src="https://github.com/sakibulofficial/simple_note/tree/main/screenshort/Screenshot_1665045242.png" alt="ss-notes-list" width="330" height="500" /> 
+<img src="https://github.com/sakibulofficial/simple_note/tree/main/screenshort/Screenshot_1672733327.png" alt="ss-notes-list" width="330" height="500" /> 
+</pre>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Don't Forget to :
+
+- website [website](https://mdsakibulislam.com)
+- Follow [linkedin](https://www.linkedin.com/in/sakibulofficial/)
